@@ -1,0 +1,1 @@
+from .sam_hq_matting import SamHqMatte
