@@ -1,5 +1,7 @@
 # Towards Natural Image Matting in the Wild via Real-Scenario Prior
 
+<a href="https://arxiv.org/abs/2410.06593"><img src='https://img.shields.io/badge/arXiv-SEMat-red' alt='Paper PDF'></a>
+
 In this paper, we propose the COCO-Matting dataset and SEMat framework to revamp training datasets, network architecture, and training objectives. Solving the problem of inappropriate synthetic training data, unaligned features and mattes from a frozen SAM, and end-to-end matting loss lacking generalization, we greatly improve the interactive matting performance on diverse datasets.
 
 **:sun_with_face: COCO-Matting**
@@ -106,6 +108,7 @@ python main.py --config-file configs/SEMat_SAM2.py --eval_dataset [dataset] --in
 
 ## :label: TODO 
 
+- [ ] Hugging Face Demo.
 - [ ] Release our COCO-Matting dataset.
 - [ ] Testing on the HIM2K dataset.
 - [ ] Release training codes.
@@ -116,3 +119,14 @@ Thanks [Detectron2](https://github.com/facebookresearch/detectron2), [ViTMatte](
 
 
 ## :black_nib: Citation
+
+If you find this project useful, please consider citing:
+
+```bibtex
+@article{SEMat,
+  title={Towards Natural Image Matting in the Wild via Real-Scenario Prior},
+  author={Xia, Ruihao and Liang, Yu and Jiang, Peng-Tao and Zhang, Hao and Sun, Qianru and Tang, Yang and Li, Bo and Zhou, Pan},
+  journal={arXiv:2410.06593},
+  year={2024}
+}
+```
