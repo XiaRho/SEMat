@@ -107,7 +107,7 @@ class SamHqMatte(nn.Module):
         ), f"{self.pixel_mean} and {self.pixel_std} have different shapes!"
 
         self.vis_period = vis_period
-        if output_dir is not None:
+        if output_dir is not None and output_dir != '?':
             self.output_dir = os.path.join(output_dir, 'vis_results')
             os.makedirs(self.output_dir, exist_ok=True)
         self.train_iter_index = 0

@@ -11,3 +11,5 @@ fairscale
 imgaug
 peft
 kornia
+gradio==4.44.1
+gradio_image_prompter

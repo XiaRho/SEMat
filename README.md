@@ -1,6 +1,9 @@
 # Towards Natural Image Matting in the Wild via Real-Scenario Prior
 
+<div align="center">
 <a href="https://arxiv.org/abs/2410.06593"><img src='https://img.shields.io/badge/arXiv-SEMat-red' alt='Paper PDF'></a>
+<a href='https://huggingface.co/spaces/XiaRho/SEMat'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-blue'></a>
+</div>
 
 In this paper, we propose the COCO-Matting dataset and SEMat framework to revamp training datasets, network architecture, and training objectives. Solving the problem of inappropriate synthetic training data, unaligned features and mattes from a frozen SAM, and end-to-end matting loss lacking generalization, we greatly improve the interactive matting performance on diverse datasets.
 
@@ -24,6 +27,20 @@ Our SEMat trained on COCO-Matting significantly outperforms the SoTA methods lik
 <br>
 </p>
 
+## :hugs: Gradio Demo
+
+<div align="center" style="font-size: 20px;">
+Example
+</div>
+<img src="figs/demo.gif" />
+
+To use our gradio demo locally:
+```
+python demo.py
+```
+
+You can also try our [online demo](https://huggingface.co/spaces/XiaRho/SEMat).
+
 ## :hammer_and_wrench: Environment Setup
 * Create a conda virtual env and activate it.
 
@@ -42,7 +59,7 @@ Our SEMat trained on COCO-Matting significantly outperforms the SoTA methods lik
   python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
   ```
 
-## :nut_and_bolt: Preparing the testing datasets
+## :nut_and_bolt: Preparing the Testing Datasets
 
 1. Download the testing dataset: [AIM-500](https://github.com/JizhiziLi/AIM), [RefMatte-RW100](https://github.com/JizhiziLi/RIM), [AM-2K](https://github.com/JizhiziLi/GFM), [P3M-500](https://github.com/JizhiziLi/P3M), [RWP-636](https://github.com/yucornetto/MGMatting), and [SIM](https://github.com/nowsyn/SIM)
 
@@ -108,7 +125,7 @@ python main.py --config-file configs/SEMat_SAM2.py --eval_dataset [dataset] --in
 
 ## :label: TODO 
 
-- [ ] Hugging Face Demo.
+- [X] Hugging Face Demo.
 - [ ] Release our COCO-Matting dataset.
 - [ ] Testing on the HIM2K dataset.
 - [ ] Release training codes.
