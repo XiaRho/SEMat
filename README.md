@@ -123,10 +123,13 @@ python main.py --config-file configs/SEMat_HQ-SAM.py --eval_dataset [dataset] --
 python main.py --config-file configs/SEMat_SAM2.py --eval_dataset [dataset] --init_from ./checkpoints/SEMat_SAM2.pth --num-gpus 1 --eval-only
 ```
 
+## :desert_island: COCO-Matting Dataset
+Our [COCO-Matting](https://drive.google.com/file/d/11uvsSgVzdnT3yRJe9YlFhrU_QyUE10o4/view?usp=sharing) is available now. We only provide the concatenated trimap and alpha in `COCO-Matting_trimap_alpha`. Images can be downloaded from [train2017.zip](http://images.cocodataset.org/zips/train2017.zip) and [unlabeled2017.zip](http://images.cocodataset.org/zips/unlabeled2017.zip). The image-label correspondence can be obtained from the [json file](https://drive.google.com/file/d/1F8MpttAsbE8TQV0QQBn2CCbioZVCHzAH/view?usp=sharing) we provided. 
+
 ## :label: TODO 
 
 - [X] Hugging Face Demo.
-- [ ] Release our COCO-Matting dataset.
+- [X] Release our COCO-Matting dataset.
 - [ ] Testing on the HIM2K dataset.
 - [ ] Release training codes.
 
