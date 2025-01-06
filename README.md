@@ -124,7 +124,7 @@ python main.py --config-file configs/SEMat_SAM2.py --eval_dataset [dataset] --in
 ```
 
 ## :desert_island: COCO-Matting Dataset
-Our [COCO-Matting](https://drive.google.com/file/d/11uvsSgVzdnT3yRJe9YlFhrU_QyUE10o4/view?usp=sharing) is available now. We only provide the concatenated trimap and alpha in `COCO-Matting_trimap_alpha`. Images can be downloaded from [train2017.zip](http://images.cocodataset.org/zips/train2017.zip) and [unlabeled2017.zip](http://images.cocodataset.org/zips/unlabeled2017.zip). The image-label correspondence can be obtained from the [json file](https://drive.google.com/file/d/1F8MpttAsbE8TQV0QQBn2CCbioZVCHzAH/view?usp=sharing) we provided. 
+Our [COCO-Matting](https://drive.google.com/file/d/1Q-clw6T6OnNNDEJ0gtkqOEIagVAvqFWU/view?usp=sharing) is available now. We only provide the concatenated trimap and alpha in `COCO-Matting_trimap_alpha`. Images can be downloaded from [train2017.zip](http://images.cocodataset.org/zips/train2017.zip) and [unlabeled2017.zip](http://images.cocodataset.org/zips/unlabeled2017.zip). The image-label correspondence can be obtained from the [json file](https://drive.google.com/file/d/1F8MpttAsbE8TQV0QQBn2CCbioZVCHzAH/view?usp=sharing) we provided. 
 
 ## :label: TODO 
 
